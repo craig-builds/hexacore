@@ -51,6 +51,59 @@ A full view of every candidate, supervisor, evaluator and examiner, with whateve
 |---|---|---|---|
 | ![](screenshots/4-admin/02-supervision.png) | ![](screenshots/4-admin/03-supervision-assign-studentid-1.png) | ![](screenshots/4-admin/05-spgsc.png) | ![](screenshots/4-admin/06-progress.png) |
 
+## The full journey: one doctoral candidate, five users
+Follow Thabo Nkosi from ethics clearance to examination. Every step is a real screen from the running system, and each hand-off appears as the *next task* for the right person.
+
+**1. Administrator verifies ethics clearance.** A proposal can't be submitted until ethics is verified.
+
+![Admin verifies ethics](screenshots/5-process/01-admin-verifies-ethics-before.png)
+
+**2. Student: the proposal step unlocks and a proposal is submitted with a PDF.**
+
+| Dashboard after ethics | Proposal form | Submitted |
+|---|---|---|
+| ![](screenshots/5-process/03-student-ethics-cleared-dashboard.png) | ![](screenshots/5-process/04-student-proposal-form.png) | ![](screenshots/5-process/05-student-proposal-submitted.png) |
+
+**3. Supervisor is prompted to assign evaluators.** The system lists only eligible staff and excludes the student's own supervisors automatically.
+
+| Proposal arrives | Panel assigned |
+|---|---|
+| ![](screenshots/5-process/06-supervisor-sees-proposal.png) | ![](screenshots/5-process/09-supervisor-panel-assigned.png) |
+
+**4. Evaluator records Accept, Rework or Reject, with comments.**
+
+| Assignment appears | Evaluation | Queue cleared |
+|---|---|---|
+| ![](screenshots/5-process/10-evaluator-sees-assignment.png) | ![](screenshots/5-process/11-evaluator-reviews-a-dlamini.png) | ![](screenshots/5-process/12-evaluator-after-a-dlamini.png) |
+
+**5. Administrator approves the evaluated proposal** in the committee queue.
+
+| Awaiting approval | Approved |
+|---|---|
+| ![](screenshots/5-process/13-admin-proposal-awaiting-approval.png) | ![](screenshots/5-process/14-admin-proposal-approved.png) |
+
+**6. Student: the thesis step unlocks, and the thesis is lodged for examination.**
+
+| Proposal approved | Thesis unlocked | Thesis form | Lodged |
+|---|---|---|---|
+| ![](screenshots/5-process/15-student-proposal-approved-dashboard.png) | ![](screenshots/5-process/16-student-thesis-unlocked.png) | ![](screenshots/5-process/17-student-thesis-form.png) | ![](screenshots/5-process/18-student-thesis-lodged.png) |
+
+**7. Supervisor nominates a three-examiner panel** (doctoral candidates need three, at least one external). The nomination is hidden from the candidate.
+
+| Thesis lodged | Nominating | Full panel |
+|---|---|---|
+| ![](screenshots/5-process/19-supervisor-thesis-lodged.png) | ![](screenshots/5-process/21-supervisor-nominating-examiner.png) | ![](screenshots/5-process/22-supervisor-examiners-nominated.png) |
+
+**8. Supervisor writes a progress report and downloads it as a PDF.**
+
+| Report form | Report created |
+|---|---|
+| ![](screenshots/5-process/23-supervisor-progress-report-filled.png) | ![](screenshots/5-process/24-supervisor-progress-report-created.png) |
+
+**9. Administrator sees the updated picture across all candidates.**
+
+![Admin oversight after the journey](screenshots/5-process/25-admin-oversight-after-journey.png)
+
 ## My contribution
 I contributed to the application's development and designed the workflow concepts around role-specific shortcuts and progress indicators, which help students identify their next steps and let supervisors and evaluators track multiple students at once.
 
