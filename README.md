@@ -107,6 +107,15 @@ Follow Thabo Nkosi from ethics clearance to examination. Every step is a real sc
 ## My contribution
 I contributed to the application's development and designed the workflow concepts around role-specific shortcuts and progress indicators, which help students identify their next steps and let supervisors and evaluators track multiple students at once.
 
+## Issues encountered & how we solved them
+- **Four very different user types sharing one system** risked becoming a cluttered, one-size-fits-all interface. We solved this by designing each dashboard around the single next action for that role, rather than exposing the whole data model to everyone.
+- **Students could get stuck not knowing what to do next**, or attempt steps out of order (e.g. submitting a proposal before ethics clearance). We enforced a strict stage-gated workflow so a step only unlocks once its prerequisite is actually verified in the system.
+- **Coordinating a shared codebase across a four-person team** under academic deadlines meant merge conflicts and inconsistent conventions early on. We fixed this with clearly split ownership per module (student flow, supervisor/evaluator views, admin oversight, data layer) and regular integration checkpoints.
+- **Keeping evaluators blind to information they shouldn't see** (e.g. supervisor nominations) while still sharing the same underlying student record required careful role-based query scoping rather than just hiding UI elements.
+
+## Result
+A working, end-to-end system that we demonstrated by walking one doctoral candidate through the full pipeline — ethics clearance, proposal, panel assignment, evaluation, committee approval, thesis lodging, examiner nomination and progress reporting — with every hand-off appearing as the right next task for the right person, each one a real screen from the running system.
+
 ## Stack
 ASP.NET MVC (C#), Microsoft SQL Server, Visual Studio 2026.
 
